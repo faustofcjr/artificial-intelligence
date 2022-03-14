@@ -29,3 +29,4 @@ Artificial Intelligence Project
         
 2. Challenges
     1. Kaggle
+        - [Titanic](kaggle/titanic)
