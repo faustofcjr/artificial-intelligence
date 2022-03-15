@@ -28,7 +28,7 @@ The dataset is very simple and small. Do not demand high perfomance from possibl
 
 ### 1.6 The performance measure is aligned with the business objective?
 - [x] Yes
-- [] No
+- [ ] No
 
 ### 1.7 What would be the minimum performance required to achieve the business objective?
 Not a lot.
