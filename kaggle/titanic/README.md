@@ -61,8 +61,9 @@ Looking at resources like https://www.encyclopedia-titanica.org/titanic-survivor
 - Passengers Ticket Class.
 - Sex of Passengers.
 - Age of Passengers.
-- Passengers Relationship (ex. husband, wife, children, siblings, and so on).
+- Passengers Relationship aboard(e.g. husband, wife, children, siblings, and so on).
 - Survived or not.
+
 
 ### 2.2 Find and document where you can get that data
 All the information about the Titanic Disaster that we need, in this context, can be found here https://www.kaggle.com/c/titanic
@@ -101,3 +102,39 @@ It just create a user in [kaggle platform](https://www.kaggle.com).
 ### 2.11 Sample a test set, put it aside, and never look at it (no data snooping!)
 - [x] Yes
 - [ ] No
+
+
+### 3. Explore the data
+<!--- <details>
+<summary>Check</summary> and here
+-->
+
+### 3.1 Create a copy of the data for exploration (sampling it down to a manageable size if necessary).
+- [x] Yes
+- [ ] No
+
+### 3.2 Create a Jupyter notebook to keep record of your data exploration.
+- [x] Yes
+- [ ] No
+
+### 3.3 Study each attribute and its characteristics:
+- [x] Names
+- [x] Type (categorical, int/float, bounded/unbounded, text, structured, etc.)
+- [x] % of missing values
+- [x] Noisiness and type of noise (stochastic, outliers, rounding errors, etc.)
+- [ ] Possibly useful for the task?
+- [ ] Type of distribution (Gaussian, uniform, logarithmic, etc.)
+
+### 3.4 For supervised learning tasks, identify the target attribute(s).
+The target is "Survived" feature
+
+### 3.5 Visualize the data.
+### 3.6 Study the correlations between attributes.
+### 3.7 Study how you would solve the problem manually.
+### 3.8 Identify the promising transformations you may want to apply.
+### 3.9 Identify extra data that would be useful (go back to "Get the Data" on page 502).
+### 3.10 Document what you have learned.
+
+
+<!--- </details> -->
+
