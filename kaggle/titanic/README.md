@@ -57,13 +57,47 @@ Looking at resources like https://www.encyclopedia-titanica.org/titanic-survivor
 ## 2. Get the data
 
 ### 2.1 List the data you need and how much you need
+- List of passengers and crew members.
+- Passengers Ticket Class.
+- Sex of Passengers.
+- Age of Passengers.
+- Passengers Relationship (ex. husband, wife, children, siblings, and so on).
+- Survived or not.
+
 ### 2.2 Find and document where you can get that data
+All the information about the Titanic Disaster that we need, in this context, can be found here https://www.kaggle.com/c/titanic
+
 ### 2.3 Check how much space it will take
+About 5MB
+
 ### 2.4 Check legal obligations, and get the authorization if necessary
+Just accept rules for [Kaggle Titantic competition](https://www.kaggle.com/c/titanic/rules)
+
 ### 2.5 Get access authorizations
+It just create a user in [kaggle platform](https://www.kaggle.com).
+
 ### 2.6 Create a workspace (with enough storage space)
+- [x] Yes
+- [ ] No
+
 ### 2.7 Get the data
+- [x] Yes
+- [ ] No
+
 ### 2.8 Convert the data to a format you can easily manipulate (without changing the data itself)
+- [x] Data properly formatted
+- [x] Data were splitted in train, validation and test
+- [ ] Data need a lot of tweaking
+
+
 ### 2.9 Ensure sensitive information is deleted or protected (e.g., anonymized)
+- [x] Yes
+- [ ] No
+
 ### 2.10 Check the size and type of data (time series, sample, geographical, etc.)
+- [x] Yes
+- [ ] No
+
 ### 2.11 Sample a test set, put it aside, and never look at it (no data snooping!)
+- [x] Yes
+- [ ] No
