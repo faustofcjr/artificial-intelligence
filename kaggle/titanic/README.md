@@ -43,6 +43,7 @@ Other models already submitted on the Kaggle platform.
 Looking at resources like https://www.encyclopedia-titanica.org/titanic-survivors.
 
 ### 1.11 List the assumptions you or others have made so far
+- Acommodations consisting of suites, berth and collective room
 - Women and children were more chance to suviver.
 - First-class members had advantage of getting into the lifeboat.
 - On the night of sinking, the temperature was around 4.1°C and ocean approximately 4°C.
