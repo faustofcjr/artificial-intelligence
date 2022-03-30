@@ -123,7 +123,7 @@ It just create a user in [kaggle platform](https://www.kaggle.com).
 - [x] Type (categorical, int/float, bounded/unbounded, text, structured, etc.)
 - [x] % of missing values
 - [x] Noisiness and type of noise (stochastic, outliers, rounding errors, etc.)
-- [ ] Possibly useful for the task?
+- [x] Possibly useful for the task? - Not Applicable
 - [ ] Type of distribution (Gaussian, uniform, logarithmic, etc.)
 
 ### 3.4 For supervised learning tasks, identify the target attribute(s).
@@ -132,10 +132,17 @@ The target is "Survived" feature
 ### 3.5 Visualize the data.
 ### 3.6 Study the correlations between attributes.
 ### 3.7 Study how you would solve the problem manually.
+- [x] Yes
+- [ ] No
 ### 3.8 Identify the promising transformations you may want to apply.
-### 3.9 Identify extra data that would be useful (go back to "Get the Data" on page 502).
+- Set mean to NaN age.
+- Change Sex categorical attribute. female=0, male=1.
+- Change Embarked categorical attribute. C=0, Q=1, S=2.
+- Share Fare with everyone related to the Ticket
+### 3.9 Identify extra data that would be useful.
 ### 3.10 Document what you have learned.
-
+- [x] Yes
+- [ ] No
 
 <!--- </details> -->
 
