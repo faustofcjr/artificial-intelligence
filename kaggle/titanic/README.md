@@ -105,7 +105,7 @@ It just create a user in [kaggle platform](https://www.kaggle.com).
 - [ ] No
 
 
-### 3. Explore the data
+## 3. Explore the data
 <!--- <details>
 <summary>Check</summary> and here
 -->
@@ -131,19 +131,60 @@ The target is "Survived" feature
 
 ### 3.5 Visualize the data.
 ### 3.6 Study the correlations between attributes.
+- [x] Yes
+- [ ] No
+
 ### 3.7 Study how you would solve the problem manually.
 - [x] Yes
 - [ ] No
+
 ### 3.8 Identify the promising transformations you may want to apply.
 - Set mean to NaN age.
 - Change Sex categorical attribute. female=0, male=1.
 - Change Embarked categorical attribute. C=0, Q=1, S=2.
 - Code Ticket Identification to a number representation. 
 - Share Fare with everyone related to the Ticket
+
 ### 3.9 Identify extra data that would be useful.
+- [x] Yes
+- [ ] No
+
 ### 3.10 Document what you have learned.
 - [x] Yes
 - [ ] No
 
 <!--- </details> -->
 
+
+## 4. Prepare the data
+
+### 4.1 Keep the original dataset intact, Work on copies of it.
+- [x] Yes
+- [ ] No
+
+### 4.2 Write functions for all data transformations you apply.
+```
+For five reasons:
+1º So you can easily prepare the data the next time you get a fresh dataset  
+2º So you can apply these transformations in future projects  
+3º To clean and prepare the test set  
+4º To clean and prepare new data instances  
+5º To make it easy to treat your preparation choices as hyperparameters
+```  
+- [x] Yes
+- [ ] No
+
+### 4.3 Data cleaning:  
+- [x] Fix or remove outliers (optional).  
+- [x] Fill in missing values (e.g., with zero, mean, median...) or drop their rows (or columns).
+
+### 4.4 Feature selection (optional):  
+- [x] Drop the attributes that provide no useful information for the task.  
+
+### 4.5 Feature engineering, where appropriates:  
+- [ ] Discretize continuous features.  
+- [ ] Decompose features (e.g., categorical, date/time, etc.).  
+- [ ] Add promising transformations of features (e.g., log(x), sqrt(x), x^2, etc.).
+- [ ] Aggregate features into promising new features.  
+
+### 4.6 Feature scaling: standardize or normalize features.  
