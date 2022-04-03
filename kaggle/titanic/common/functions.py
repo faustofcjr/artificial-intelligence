@@ -5,6 +5,16 @@ from sklearn import (
     model_selection
 )
 
+from sklearn.model_selection import (
+    RepeatedStratifiedKFold,
+    RepeatedKFold
+)
+
+from sklearn.model_selection import (
+    GridSearchCV,
+    RandomizedSearchCV
+)
+
 def show_model_result(clf, X, y, y_test, y_predict):
     
     #############################################################################
@@ -68,3 +78,16 @@ def show_curve_roc(clf, X_test, y_test, y_predict, label="Curve ROC"):
     plt.ylabel("True Positive Rate")
 
     plt.show()
+
+
+def show_best_hyperparameter_optimization(clf, space, X, y, n_splits=10, n_repeats=3, random_state=1, scoring="accuracy", n_jobs=-1):
+    """
+    Hyperparameter Optimization
+    Note: The execution of the code below may take a few minutes or hours.
+    """
+    cv = RepeatedStratifiedKFold(n_splits=n_splits, n_repeats=n_repeats, random_state=random_state)
+    gs = GridSearchCV(clf, space, cv=cv, scoring=scoring, n_jobs=n_jobs)
+    result_gs = gs.fit(X, y)
+
+    print('Best Score: %s' % result_gs.best_score_)
+    print('Best Hyperparameters: %s' % result_gs.best_params_)

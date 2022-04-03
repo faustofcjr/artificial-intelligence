@@ -138,6 +138,7 @@ The target is "Survived" feature
 - Set mean to NaN age.
 - Change Sex categorical attribute. female=0, male=1.
 - Change Embarked categorical attribute. C=0, Q=1, S=2.
+- Code Ticket Identification to a number representation. 
 - Share Fare with everyone related to the Ticket
 ### 3.9 Identify extra data that would be useful.
 ### 3.10 Document what you have learned.
