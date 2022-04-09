@@ -64,6 +64,27 @@ def get_age_group(dataset):
     
     
 
+def add_family_name(dataset):
+    """
+    To each passeger, get you family name and add it in a new
+    column callled FamilyName.
+    
+    Parameters
+    ----------
+    dataset : Pandas DataFrame
+        The dataframe that contains "Name" column
+    """
+    names = dataset["Name"]
+    surnames = []
+
+    for name in names:
+        surname = name.split(",")[0]
+        surnames.append(surname.strip())
+    
+    dataset["FamilyName"] = surnames
+    
+
+    
 def get_passengers_per_sex(dataset):
     """
     Group by dataset by sex.

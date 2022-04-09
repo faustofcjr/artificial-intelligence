@@ -1,3 +1,4 @@
+import pandas as pd
 import matplotlib.pyplot as plt
 
 from sklearn import (
@@ -84,6 +85,8 @@ def show_best_hyperparameter_optimization(clf, space, X, y, n_splits=10, n_repea
     """
     Hyperparameter Optimization
     Note: The execution of the code below may take a few minutes or hours.
+    
+    clf : Classifier Model
     """
     cv = RepeatedStratifiedKFold(n_splits=n_splits, n_repeats=n_repeats, random_state=random_state)
     gs = GridSearchCV(clf, space, cv=cv, scoring=scoring, n_jobs=n_jobs)
@@ -91,3 +94,42 @@ def show_best_hyperparameter_optimization(clf, space, X, y, n_splits=10, n_repea
 
     print('Best Score: %s' % result_gs.best_score_)
     print('Best Hyperparameters: %s' % result_gs.best_params_)
+    
+
+def get_feature_importances(clf, X):
+    """
+    Calculates the relevance of each feature to classifier model decision.
+
+    Parameters
+    ----------
+    clf : Classifier Model
+      X : Pandas DataFrame
+    
+    return
+    ----------
+    dataframe : Pandas DataFrame
+    """
+    featimps = clf.feature_importances_
+    pctimps = list(map(lambda fi: round(fi * 100), featimps))
+    dataframe = pd.DataFrame({ "Features": X.columns, "Relevance (%)": pctimps})
+    return dataframe.sort_values(by=["Relevance (%)"], ascending=False)
+
+
+def get_error_prediction(X_test, y_test, y_predict):
+    """
+    Get error prediction 
+
+    Parameters
+    ----------
+       X_test : Features in test 
+       y_test : Ground Truth
+    y_predict : Prediction
+    
+    return 
+    ----------
+    dataframe : Pandas DataFrame
+    """
+    X_test_result = X_test.copy()
+    X_test_result["Ground Truth"] = y_test
+    X_test_result["Prediction"] = y_predict
+    return X_test_result[(X_test_result["Ground Truth"] != X_test_result["Prediction"])]

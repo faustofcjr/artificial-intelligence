@@ -147,6 +147,7 @@ The target is "Survived" feature
 - Set mean to NaN age.
 - Change Sex categorical attribute. female=0, male=1.
 - Change Embarked categorical attribute. C=0, Q=1, S=2.
+- Join in one feature called Kinship
 - Code Ticket Identification to a number representation. 
 - Share Fare with everyone related to the Ticket
 
