@@ -64,6 +64,52 @@ def get_age_group(dataset):
     
     
 
+def add_family_name(dataset):
+    """
+    To each passeger, get you family name and add it in a new
+    column callled FamilyName.
+    
+    Parameters
+    ----------
+    dataset : Pandas DataFrame
+        The dataframe that contains "Name" column
+    """
+    names = dataset["Name"]
+    surnames = []
+
+    for name in names:
+        surname = name.split(",")[0]
+        surnames.append(surname.strip())
+    
+    dataset["FamilyName"] = surnames
+
+   
+
+def add_title(dataset):
+    """
+    To each passeger, get you title and add it in a new column 
+    callled Title.
+        
+    Parameters
+    ----------
+    dataset : Pandas DataFrame
+        The dataframe that contains "Name" columns.
+    """
+    
+    rare = ["Lady", "Countess", "Capt", "Col","Don", "Dr", "Major", "Rev", "Sir", "Jonkheer", "Dona"]
+    
+    titles =  dataset.Name.str.extract(" ([A-Za-z]+)\.", expand=False)
+    
+    titles = titles.fillna("Rare")
+    titles = titles.replace(rare, "Rare")
+    titles = titles.replace("Mlle", "Miss")
+    titles = titles.replace("Ms", "Miss")
+    titles = titles.replace("Mme", "Mrs")
+    
+    
+    dataset["Title"] = titles
+
+    
 def get_passengers_per_sex(dataset):
     """
     Group by dataset by sex.
