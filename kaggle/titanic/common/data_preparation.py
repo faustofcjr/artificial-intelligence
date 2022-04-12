@@ -83,8 +83,8 @@ def add_family_name(dataset):
     
     dataset["FamilyName"] = surnames
 
-   
 
+    
 def add_title(dataset):
     """
     To each passeger, get you title and add it in a new column 
@@ -93,9 +93,8 @@ def add_title(dataset):
     Parameters
     ----------
     dataset : Pandas DataFrame
-        The dataframe that contains "Name" columns.
-    """
-    
+        The dataframe that contains "Name" column.
+    """    
     rare = ["Lady", "Countess", "Capt", "Col","Don", "Dr", "Major", "Rev", "Sir", "Jonkheer", "Dona"]
     
     titles =  dataset.Name.str.extract(" ([A-Za-z]+)\.", expand=False)
@@ -108,7 +107,45 @@ def add_title(dataset):
     
     
     dataset["Title"] = titles
+    
 
+def share_fare(dataset):
+    """
+    Share Fare with everyone related to the Ticket.
+        
+    Parameters
+    ----------
+    dataset : Pandas DataFrame
+        The dataframe that contains "Ticket" and "Fare" columns.
+    """
+    tickets = dataset["Ticket"].unique()
+    for tkt in tickets:
+        df_ticket = dataset[dataset["Ticket"] == tkt]
+
+        count = df_ticket["Ticket"].size
+        fare = df_ticket["Fare"]
+        fare_shared = round(fare / count, 2)
+
+        dataset.loc[dataset["Ticket"] == tkt, "Fare"] = fare_shared
+
+
+def fill_fare(dataset):
+    """
+    Fill in missing Fare feature with median of passenger class.
+    
+    Parameters
+    ----------
+    dataset : Pandas DataFrame
+        The dataframe that contains "Fare" and Pclass columns
+    mean : 
+    """
+    data = dataset[dataset["Fare"].isnull()]
+
+    for index, row in data.iterrows():
+        pclass = row["Pclass"]
+        median = dataset[dataset["Pclass"] == pclass]["Fare"].median()
+        dataset.loc[index, "Fare"] = median
+    
     
 def get_passengers_per_sex(dataset):
     """

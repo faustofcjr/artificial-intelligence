@@ -252,4 +252,9 @@ Notes:
     - Beware of slow degradation too: models tend to "rot" as data evolves.   
     - Measuring performance may require a human pipeline (e.g., via a crowdsourcing service).  
     - Also monitor your inputs' quality (e.g., a malfunctioning sensor sending random values, or another team's output becoming stale). This is  particulary important for online learning systems.  
-3. Retrain your models on a regular basis on fresh data (automate as much as possible).  
+3. Retrain your models on a regular basis on fresh data (automate as much as possible).
+
+
+## 9. Your Best Kaggle Entry!
+
+Your most recent submission scored 0.74162, which is an improvement of your previous score of 0.72488. Great job! =\
