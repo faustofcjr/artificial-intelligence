@@ -7,7 +7,8 @@
 5. Short-list promising models
 6. Fine-Tune the System 
 7. Present your solution
-8. Launch!  
+8. Launch!
+9. Best Kaggle Entry!
 
 ## 1. Frame the problem and look at the big picture
 
@@ -255,6 +256,6 @@ Notes:
 3. Retrain your models on a regular basis on fresh data (automate as much as possible).
 
 
-## 9. Your Best Kaggle Entry!
+## 9. Best Kaggle Entry!
 
-Your most recent submission scored 0.74162, which is an improvement of your previous score of 0.72488. Great job! =\
+Most recent submission scored 0.74162, which is an improvement of your previous score of 0.72488. Great job! =\
