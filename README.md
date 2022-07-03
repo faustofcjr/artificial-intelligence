@@ -19,13 +19,15 @@ Artificial Intelligence Project
         1. knn
         2. linear-regression
     2. Deep Learning
-        1. Convolutional Neural Network
-            - [cifar_images](examples/deep-learning/cnn/cifar_images.ipynb)
-            - [mnist_expert](examples/deep-learning/cnn/mnist_expert.ipynb)
-        2. Deep Neural Network
-            - [fashion_mnist](examples/deep-learning/dnn/fashion_mnist.ipynb)
-        3. Recurrent Neural Network
-            - [text_classification_sentiment_analysis](examples/deep-learning/rnn/text_classification_sentiment_analysis.ipynb)
+        1. supervised
+            1. Convolutional Neural Network
+                - [cifar_images](examples/deep-learning/cnn/cifar_images.ipynb)
+                - [mnist_expert](examples/deep-learning/cnn/mnist_expert.ipynb)
+            2. Deep Neural Network
+                - [fashion_mnist](examples/deep-learning/dnn/fashion_mnist.ipynb)
+            3. Recurrent Neural Network
+                - [text_classification_sentiment_analysis](examples/deep-learning/rnn/text_classification_sentiment_analysis.ipynb)
+        2. unsupervised
         
 2. Challenges
     1. Kaggle
