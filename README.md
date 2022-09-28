@@ -33,9 +33,9 @@ Artificial Intelligence Project
         2. unsupervised
         
         
-**2. Challenges**  
+2. **Challenges**  
     1. Kaggle  
         - [Titanic](kaggle/titanic)
 
-**3. Udemy**  
+3. **Udemy**  
     1. [Tensorflow 2.0: Deep Learning and Artificial Intelligence](udemy/tensorflow-2.0)
