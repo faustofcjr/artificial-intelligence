@@ -15,9 +15,12 @@ Artificial Intelligence Project
 
 
 1. **Examples**
+    
     1. Machine Learning
-        1. knn
-        2. linear-regression
+        1. supervised
+            1. knn
+            2. linear-regression
+        2. unsupervised
     2. Deep Learning
         1. supervised
             1. Convolutional Neural Network
@@ -28,6 +31,7 @@ Artificial Intelligence Project
             3. Recurrent Neural Network
                 - [text_classification_sentiment_analysis](examples/deep-learning/rnn/text_classification_sentiment_analysis.ipynb)
         2. unsupervised
+        
         
 2. Challenges
     1. Kaggle
