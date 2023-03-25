@@ -1,0 +1,8 @@
+1. Set a goal
+2. Determine what must be forecast to achieve our goal
+3. Set the horizon of the forecast
+4. Gather the data
+5. Develop a forecasting model
+6. Deploy to production
+7. Monitor
+8 Collect new data
